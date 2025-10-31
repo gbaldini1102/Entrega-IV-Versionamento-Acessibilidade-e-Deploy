@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Exemplo - SPA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <!-- checkbox hack para menu mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+  <label for="menu-toggle" class="menu-label" aria-hidden="true">☰</label>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Início</a></li>
+      <li class="dropdown">
+        <a href="#projetos">Projetos ▾</a>
+        <ul class="submenu">
+          <li><a href="#projetos">Voluntariado</a></li>
+          <li><a href="#projetos">Doações</a></li>
+        </ul>
+      </li>
+      <li><a href="#cadastro">Cadastro</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main id="content">
+    <!-- O conteúdo das páginas será injetado aqui via JS -->
+  </main>
+
+  <footer>
+    <p>© 2025 ONG Exemplo</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
